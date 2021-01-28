@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  text-transform: capitalize;
+  color: #333;
+}
+
+.testimonials {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "testimonial-1 testimonial-1 testimonial-2 testimonial-3" "testimonial-4 testimonial-5 testimonial-5 testimonial-3";
+  grid-gap: 2rem;
+}
+
+.testimonials .testimonial {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 3rem;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+}
+
+.testimonials .testimonial .profile-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials .testimonial .profile-box__img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.testimonials .testimonial .profile-box__name {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.testimonials .testimonial .profile-box__name span {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #cfcfcf;
+}
+
+.testimonials .testimonial .content-box {
+  padding-top: 2rem;
+}
+
+.testimonials .testimonial .content-box__header {
+  padding-bottom: 1.8rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.testimonials .testimonial .content-box__paragraph {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #cfcfcf;
+}
+
+.testimonials .testimonial-1 {
+  width: 100%;
+  height: 100%;
+  background-color: #7541c8;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: testimonial-1;
+}
+
+.testimonials .testimonial-2 {
+  width: 100%;
+  height: 100%;
+  background-color: #48556a;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: testimonial-2;
+}
+
+.testimonials .testimonial-3 {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: testimonial-3;
+}
+
+.testimonials .testimonial-3 .profile-box__name {
+  color: #333;
+}
+
+.testimonials .testimonial-3 .content-box__header {
+  color: #333;
+}
+
+.testimonials .testimonial-4 {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: testimonial-4;
+}
+
+.testimonials .testimonial-4 .profile-box__name {
+  color: #333;
+}
+
+.testimonials .testimonial-4 .content-box__header {
+  color: #333;
+}
+
+.testimonials .testimonial-5 {
+  width: 100%;
+  height: 100%;
+  background-color: #19212e;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: testimonial-5;
+}
+
+@media (max-width: 60rem) {
+  .main {
+    min-height: 100%;
+  }
+  .testimonials {
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "testimonial-1 " "testimonial-2" "testimonial-3" "testimonial-4" " testimonial-5";
+  }
+}
+
+body {
+  background-color: #ecf2f8;
+  min-height: 100vh;
+}
+
+.main {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 144rem;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=main.css.map */

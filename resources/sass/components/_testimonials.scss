@@ -1,0 +1,105 @@
+.testimonials {
+  width: 100%;
+  // height: 50%;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "testimonial-1 testimonial-1 testimonial-2 testimonial-3"
+    "testimonial-4 testimonial-5 testimonial-5 testimonial-3";
+  grid-gap: 2rem;
+
+  .testimonial {
+    box-sizing: border-box;
+    padding: 3rem;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 4rem rgba($color: #000000, $alpha: 0.2);
+
+    .profile-box {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+
+      &__img {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+      }
+      &__name {
+        font-weight: 400;
+        font-size: 1.6rem;
+        color: $color-wight;
+        span {
+          display: block;
+          font-size: 1.4rem;
+          font-weight: 300;
+          color: $color-gray;
+        }
+      }
+    }
+
+    .content-box {
+      padding-top: 2rem;
+
+      &__header {
+        padding-bottom: 1.8rem;
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 1.4;
+        color: $color-wight;
+      }
+
+      &__paragraph {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 1.4;
+        color: $color-gray;
+      }
+    }
+  }
+
+  .testimonial-1 {
+    width: 100%;
+    height: 100%;
+    background-color: $color-1;
+    grid-area: testimonial-1;
+  }
+  .testimonial-2 {
+    width: 100%;
+    height: 100%;
+    background-color: $color-2;
+    grid-area: testimonial-2;
+  }
+  .testimonial-3 {
+    .profile-box__name {
+      color: $color-dark;
+    }
+    .content-box__header {
+      color: $color-dark;
+    }
+
+    width: 100%;
+    height: 100%;
+    background-color: $color-wight;
+    grid-area: testimonial-3;
+  }
+  .testimonial-4 {
+    .profile-box__name {
+      color: $color-dark;
+    }
+    .content-box__header {
+      color: $color-dark;
+    }
+    width: 100%;
+    height: 100%;
+    background-color: $color-wight;
+    grid-area: testimonial-4;
+  }
+  .testimonial-5 {
+    width: 100%;
+    height: 100%;
+    background-color: $color-3;
+    grid-area: testimonial-5;
+  }
+}

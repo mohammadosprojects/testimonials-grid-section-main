@@ -1,0 +1,17 @@
+@media (max-width: 60rem) {
+  .main {
+    min-height: 100%;
+  }
+  .testimonials {
+    height: 100%;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "testimonial-1 "
+      "testimonial-2"
+      "testimonial-3"
+      "testimonial-4"
+      " testimonial-5";
+  }
+}
